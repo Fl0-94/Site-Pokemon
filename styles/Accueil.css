@@ -1,0 +1,95 @@
+
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#menu .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#menu li {
+    float: none;
+}
+
+#menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #000;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-logo {
+    height: 50px;
+}
+
+.social-icons {
+   margin-right: 50px;
+   color: black;
+   height: 50px;
+    
+
+
+}
+
+
+#Accueil {
+    background-image: url('images/banniere.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.titre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
