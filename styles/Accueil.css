@@ -1,12 +1,10 @@
-
-
 #menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: white;
-    color: #fff;
+    color: black;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,7 +15,6 @@
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 #menu .nav-links {
     display: flex;
@@ -37,8 +34,6 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
-
-
 
 #logo {
     width: 100px;
@@ -69,14 +64,17 @@ footer {
 }
 
 .social-icons {
-   margin-right: 50px;
-   color: black;
-   height: 50px;
-    
-
-
+    margin-right: 50px;
 }
 
+.social-icons a {
+    color: black;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+}
 
 #Accueil {
     background-image: url('images/banniere.jpg');
@@ -93,3 +91,68 @@ footer {
     margin-top: 200px;
 }
 
+#promo-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    transition: top 0.3s ease-out;
+    z-index: 1000;
+}
+
+#promo-scroll.hide {
+    top: -100px;
+}
+
+@media only screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #menu .nav-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #menu li {
+        margin-bottom: 10px;
+    }
+
+    #menu li a {
+        padding: 10px 16px;
+    }
+
+    #menu .logo-container {
+        order: -1;
+    }
+
+    #panier-logo {
+        display: inline-block;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .social-icons {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #footer-logo {
+        margin-bottom: 10px;
+    }
+}
