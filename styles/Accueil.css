@@ -33,6 +33,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+#menu li a:hover {
+    border-bottom: 2px solid #000;
 }
 
 #logo {
@@ -91,22 +96,7 @@ footer {
     margin-top: 200px;
 }
 
-#promo-scroll {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffcc00;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    transition: top 0.3s ease-out;
-    z-index: 1000;
-}
 
-#promo-scroll.hide {
-    top: -100px;
-}
 
 @media only screen and (max-width: 768px) {
     #menu {
